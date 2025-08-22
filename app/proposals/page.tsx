@@ -13,7 +13,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { AuthService, type User } from "@/lib/auth"
 import { ProposalService, type BarterProposal } from "@/lib/proposals"
 import { MessageService } from "@/lib/messages"
-import { Heart, ArrowLeft, Inbox, Send, CheckCircle } from "lucide-react"
+import { Heart, ArrowLeft, Inbox, Send, CheckCircle, GraduationCap } from "lucide-react"
 
 export default function ProposalsPage() {
   const [user, setUser] = useState<User | null>(null)
@@ -157,9 +157,11 @@ export default function ProposalsPage() {
               Back to Home
             </Button>
             <div className="flex items-center gap-2">
-              <Heart className="h-8 w-8 text-primary" />
-              <h1 className="text-2xl font-serif font-bold text-primary">Lovable</h1>
+              
+              <GraduationCap className="h-8 w-8 text-primary" />
+              <h1 className="text-2xl font-serif font-bold text-primary">Skillio</h1>
             </div>
+
           </div>
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="sm" onClick={() => router.push("/messages")}>

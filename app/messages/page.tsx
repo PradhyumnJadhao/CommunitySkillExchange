@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { AuthService, type User } from "@/lib/auth"
 import { MessageService, type Conversation } from "@/lib/messages"
-import { Heart, ArrowLeft, MessageSquare } from "lucide-react"
+import { Heart, ArrowLeft, MessageSquare, GraduationCap } from "lucide-react"
 
 export default function MessagesPage() {
   const [user, setUser] = useState<User | null>(null)
@@ -100,8 +100,8 @@ export default function MessagesPage() {
               Back to Home
             </Button>
             <div className="flex items-center gap-2">
-              <Heart className="h-8 w-8 text-primary" />
-              <h1 className="text-2xl font-serif font-bold text-primary">Lovable</h1>
+                <GraduationCap className="h-8 w-8 text-primary" />
+              <h1 className="text-2xl font-serif font-bold text-primary">Skillio</h1>
             </div>
           </div>
           <div className="flex items-center gap-4">
